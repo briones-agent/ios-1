@@ -44,3 +44,7 @@ fastlane/Preview.html
 fastlane/screenshots/screenshots.html
 fastlane/screenshots/*/*.png
 fastlane/test_output
+
+# Expo brownfield
+integrate_expo.rb
+build_expo/

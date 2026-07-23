@@ -118,6 +118,15 @@
       }
     },
     {
+      "identity" : "expo-brownfield-shared-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/briones-agent/expo-brownfield-shared-ios",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6da1fb337eac0657d0b39fce4792cf95aaac1e3a"
+      }
+    },
+    {
       "identity" : "google-api-objectivec-client-for-rest",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/google-api-objectivec-client-for-rest.git",

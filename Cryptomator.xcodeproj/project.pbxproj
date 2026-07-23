@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		11E84AE6F7F105AB9A0E2EAE /* TrustedHubHostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964E7C048AC1D59105CF75C /* TrustedHubHostsViewController.swift */; };
+		297EF8787D07D969942EE5C2 /* ExpoIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BC551B4A476966F401A125 /* ExpoIntegration.swift */; };
 		3BCBE843A35B7D9E16795451 /* LifetimeUpgradeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4FC7AFEB4B45864C4FB10 /* LifetimeUpgradeViewModel.swift */; };
+		4479D7875D97EA84F7FD7085 /* ExpoBrownfieldPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 85E4CB9D04CBF5047F1E65EF /* ExpoBrownfieldPackage */; };
 		4A03255E25A368BF00E63D7A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03255D25A368BF00E63D7A /* MainCoordinator.swift */; };
 		4A03257825A36A6900E63D7A /* VaultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03257725A36A6900E63D7A /* VaultListViewController.swift */; };
 		4A03258125A36B7D00E63D7A /* UIViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03258025A36B7D00E63D7A /* UIViewController+Preview.swift */; };
@@ -570,6 +572,7 @@
 		153B84C203850D7414DE2A66 /* FileProviderAdapterRecoverUploadsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderAdapterRecoverUploadsTests.swift; sourceTree = "<group>"; };
 		1635F1C6B23AA6FBFF781706 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2EF42299CA3BB5AF289540DA /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/Intents.strings; sourceTree = "<group>"; };
+		35BC551B4A476966F401A125 /* ExpoIntegration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpoIntegration.swift; sourceTree = "<group>"; };
 		3FFDCEC6A6895EC4F495A160 /* pa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pa; path = pa.lproj/Localizable.strings; sourceTree = "<group>"; };
 		46F99A7913E9584535D9F5FC /* TrustedHubHostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustedHubHostsViewModel.swift; sourceTree = "<group>"; };
 		4A03255D25A368BF00E63D7A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -1160,6 +1163,7 @@
 			files = (
 				4A9172822619F17C003C4043 /* CryptomatorCommon in Frameworks */,
 				4A1521E427C55EA2006C96B2 /* TPInAppReceipt in Frameworks */,
+				4479D7875D97EA84F7FD7085 /* ExpoBrownfieldPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1882,6 +1886,7 @@
 				4A4B7E4026B2ABC4009BFDB1 /* VaultDetail */,
 				4A8195DB25ADB8AD00F7DDA1 /* VaultList */,
 				4AA22C08261CA71300A17486 /* WebDAV */,
+				35BC551B4A476966F401A125 /* ExpoIntegration.swift */,
 			);
 			path = Cryptomator;
 			sourceTree = "<group>";
@@ -2326,6 +2331,7 @@
 			packageProductDependencies = (
 				4A9172812619F17C003C4043 /* CryptomatorCommon */,
 				4A1521E327C55EA2006C96B2 /* TPInAppReceipt */,
+				85E4CB9D04CBF5047F1E65EF /* ExpoBrownfieldPackage */,
 			);
 			productName = Cryptomator;
 			productReference = 4AE97DA824572E4900452814 /* Cryptomator.app */;
@@ -2465,6 +2471,7 @@
 			mainGroup = 4A5E5B202453119100BD6298;
 			packageReferences = (
 				4A1521E227C55EA2006C96B2 /* XCRemoteSwiftPackageReference "TPInAppReceipt" */,
+				FFB00845320C36362F7E51C1 /* XCRemoteSwiftPackageReference "expo-brownfield-shared-ios" */,
 			);
 			productRefGroup = 4A5E5B2A2453119100BD6298 /* Products */;
 			projectDirPath = "";
@@ -3017,6 +3024,7 @@
 				4A21B49626BC0270000D13DF /* VaultDetailInfoFooterViewModel.swift in Sources */,
 				11E84AE6F7F105AB9A0E2EAE /* TrustedHubHostsViewController.swift in Sources */,
 				6436F6BD08894DAD03812751 /* TrustedHubHostsViewModel.swift in Sources */,
+				297EF8787D07D969942EE5C2 /* ExpoIntegration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3686,6 +3694,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = YZQJQUHA3L;
 				INFOPLIST_FILE = Cryptomator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3704,6 +3713,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = YZQJQUHA3L;
 				INFOPLIST_FILE = Cryptomator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3878,6 +3888,14 @@
 				minimumVersion = 3.3.0;
 			};
 		};
+		FFB00845320C36362F7E51C1 /* XCRemoteSwiftPackageReference "expo-brownfield-shared-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/briones-agent/expo-brownfield-shared-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -3909,6 +3927,11 @@
 		4AF9D44829C262B800EB3822 /* CryptomatorCommon */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CryptomatorCommon;
+		};
+		85E4CB9D04CBF5047F1E65EF /* ExpoBrownfieldPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFB00845320C36362F7E51C1 /* XCRemoteSwiftPackageReference "expo-brownfield-shared-ios" */;
+			productName = ExpoBrownfieldPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

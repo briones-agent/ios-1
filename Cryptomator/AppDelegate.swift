@@ -26,6 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Set up logger
 		LoggerSetup.oneTimeSetup()
 
+		// Expo brownfield: initialize React Native and float the "Expo" entry button.
+		ExpoIntegration.bootstrap()
+
 		// Set up IAP Checker
 		setupIAP()
 
