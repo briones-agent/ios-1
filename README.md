@@ -1,3 +1,20 @@
+# Cryptomator for iOS + React Native
+
+This is an experimental fork of the official [Cryptomator for iOS](https://github.com/cryptomator/ios) with the sole purpose of testing brownfield support for Expo and React Native in large native-first codebases. Its commits serve as a reference for anyone interested in integrating React Native into an existing iOS app, especially those that don't want to refactor the whole project structure to accommodate React Native.
+
+This project uses Expo's brownfield **isolated** approach, consuming a **prebuilt, shared Swift Package** rather than building React Native inside this repo — so the native app needs no Node, Yarn, or React Native toolchain.
+
+## Integration steps
+
+Check commits for detailed steps; full instructions are in the [expo-brownfield documentation](https://docs.expo.dev/brownfield/overview/).
+
+1. **Prebuilt shared package**: React Native is built once (Expo SDK 57.0.0) and published as a binary Swift Package at [briones-agent/expo-brownfield-shared-ios](https://github.com/briones-agent/expo-brownfield-shared-ios).
+2. **Add the package**: Xcode -> Add Package Dependencies -> that repo URL -> add the **`ExpoBrownfieldPackage`** product to the app target (deployment target >= 16.4).
+3. **Add a React Native view**: `import ExpoBrownfieldKit`; `ReactNativeHostManager.shared.initialize()` at launch, then present `ReactNativeViewController(moduleName: "main")`. See `Cryptomator/ExpoIntegration.swift`.
+
+<details>
+<summary>Cryptomator for iOS</summary>
+
 # Cryptomator for iOS
 
 [![Build](https://github.com/cryptomator/ios/actions/workflows/build.yml/badge.svg)](https://github.com/cryptomator/ios/actions/workflows/build.yml)
@@ -65,3 +82,5 @@ Help us keep Cryptomator open and inclusive. Please read and follow our [Code of
 ## License
 
 Distributed under the GPLv3. See the LICENSE file for more info.
+
+</details>
